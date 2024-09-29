@@ -1,0 +1,26 @@
+body{
+    font-size:18px;
+    color: #2D3748;
+}
+
+
+header{
+    img{
+        border-radius: 50%;
+    }
+
+}
+
+
+.left-img{
+    float:left;
+}
+
+.right-img{
+    float:right;
+}
+
+aside{
+    
+    float:right;
+}
