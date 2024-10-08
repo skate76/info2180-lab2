@@ -1,26 +1,154 @@
 body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     font-size:18px;
     color: #2D3748;
+    margin:0;
+    color: #2D3748;
+    padding:0;
+    box-sizing: border-box;
 }
 
 
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img{
         border-radius: 50%;
     }
+    background-color: #63B3ED;
+    padding: 20px;
+    
+    color: #FFFFFF;
+    
 
+}
+
+header h1{
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', 'Times New Roman', Times, serif;
 }
 
 
 .left-img{
     float:left;
+    margin-right: 10px;
+    border-radius: 5%;
 }
 
 .right-img{
-    float:right;
+    float: right;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    
+}
+p{
+    margin: 0;
 }
 
-aside{
+.sidebar{
     
-    float:right;
+    
+    padding: 20px;
+    margin-top: 47.5px;
+        sm{
+        color: #48BB78;
+        }
+        arch{
+            color: #48BB78;
+        }
+}
+
+.sidebar article{
+    margin: 0;
+}
+
+.sidebar h3{
+    margin-top:0;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.grid-container{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    column-gap: 50px;
+    min-height: 100vh;
+
+}
+
+.grid-item1{
+    grid-area: header;
+}
+
+.grid-item2{
+    grid-area: main;
+    padding-left: 100px;
+}
+
+.grid-item3{
+    grid-area: sidebar;
+    padding-right: 100px;
+}
+
+.grid-item4{
+    grid-area: footer;
+}
+
+.main-content{
+    padding: 20px;
+   
+    min-width: 300px;
+}
+
+.footer{
+    background-color:#2C5282;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.article1{
+    h2{
+        font-size: 32px;
+        color:#48BB78;
+    }
+    h1{
+        color: #718096;
+    }
+}
+
+.article2{
+    h2{
+        font-size: 32px;
+        color:#48BB78;
+    }
+    h1{
+        color: #718096;
+    }
+}
+
+.about-section{
+    background-color: #E2E8F0;
+    
+    h3{
+        color: #000000;
+    }
+    color: #2D3748;
+    
+}
+a{
+    text-decoration: none;
+    color: #4299E1;
 }
